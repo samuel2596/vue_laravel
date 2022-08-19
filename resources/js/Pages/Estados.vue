@@ -2,6 +2,7 @@
     <div>
         <h1>Estados</h1>
         <div class="add-item-form">
+            <el-link href="crearestado-vue" round style="float: right;" >Añadir Estados</el-link>
             <button v-on:click="datos.push({id:datos.length+1, nombre:datos})" round style="float: right;" class="btn btn-primary">Añadir Paises</button>
         </div>
         <table class="table table-striped">

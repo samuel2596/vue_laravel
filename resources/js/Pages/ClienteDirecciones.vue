@@ -3,6 +3,7 @@
         <h1>Direcciones De Clientes</h1>
         <div class="add-item-form">
             <button v-on:click="datos.push({id:datos.length+1, nombre:datos})" round style="float: right;" class="btn btn-primary">Añadir Paises</button>
+            <el-link href="crearclientedireccion-vue" round style="float: right;" >Añadir Direcciones</el-link>
         </div>
         <table class="table table-striped">
             <thead>
@@ -14,7 +15,7 @@
             <th>Calle</th>
             <th>Num. Exterior</th>
             <th>Num. Interior</th>
-            <th>Clientes</th>
+            <th>Grupo</th>
             <th>Estatus</th>
             <th>Tipo</th>
             <th>Codigo Postal</th>
@@ -30,7 +31,7 @@
                 <td>{{dato.calle}}</td>
                 <td>{{dato.numeroexterior}}</td>
                 <td>{{dato.numerointerior}}</td>
-                <td>{{dato.cliente}}</td>
+                <td>{{dato.grupo}}</td>
                 <td>{{dato.estatus}}</td>
                 <td>{{dato.tipo}}</td>
                 <td>{{dato.codigopostal}}</td>
@@ -81,7 +82,7 @@
                     calle:'Ocampo',
                     numeroexterior:'21345',
                     numerointerior:' ',
-                    cliente:'Sam',
+                    grupo:'Sam',
                     estatus:'Activo',
                     tipo:'envio',
                     codigopostal:'31055',

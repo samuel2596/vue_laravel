@@ -1,16 +1,17 @@
 <template>
-    <div v-for="dato in datos">
+    <div v-for="dato in datos" >
         <h1>Añadir Pais</h1>
-        <h3>{{datos.nombre}}</h3>
-        <input v-model="datos.nombre">
-        <p/>
-        <el-button>boton</el-button>
         <!--<el-button type="danger" :icon="Delete" circle />-->
+        <el-form  label-width="120px">
+            <el-form-item label="Nombre del Pais" >
+                <el-input v-model="dato.nombre"  />
+            </el-form-item>
 
-
-
-
-
+            <el-form-item>
+                <el-button type="primary" @click="onSubmit">Añadir</el-button>
+                <el-button href="/Paises.vue">Cancel</el-button>
+            </el-form-item>
+        </el-form>
     </div>
 
 
@@ -18,38 +19,18 @@
 
 
 <script type="text/javascript">
-    import {
-        Delete
-    } from '@element-plus/icons-vue'
 
-
-
-
-    // do not use same name with ref
 
     export default {
-
-
-
-        name: "prueba",
-        props: {
-        },
         data: () => ({
-            inputvue:"Prueba de input en vue",
-            Mensaje:"PRUEBA DE TABLAS Y VUE",
             informacion: [
                 { text: 'JavaScript' },
                 { text: 'Vue.js' },
                 { text: 'Laravel' },
                 { text: 'Backpack' },
             ],
-            newdatos:[
-                {id: ''},
-                {name:''},
-                {activo:''},
-            ],
             datos:[
-                {id:1, nombre:'Samuel', telefonos:'56364355', activo:'No'},]
+                {id:1, nombre:"japon"},]
         }),
         methods:{
         },

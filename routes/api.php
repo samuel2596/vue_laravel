@@ -26,6 +26,12 @@ Route::get('Paises-vue', function(){
 Route::get('crearpaises-vue', function(){
     return \Inertia\Inertia::render('crearpaises');
 });
+Route::get('crearestado-vue', function(){
+    return \Inertia\Inertia::render('crearestado');
+});
+Route::get('crearmunicipio-vue', function(){
+    return \Inertia\Inertia::render('crearmunicipio');
+});
 Route::get('Estados-vue', function(){
     return \Inertia\Inertia::render('Estados');
 });
@@ -37,6 +43,15 @@ Route::get('ClienteGrupos-vue', function(){
 });
 Route::get('Clientes-vue', function(){
     return \Inertia\Inertia::render('Clientes');
+});
+Route::get('crearclientegrupos-vue', function(){
+    return \Inertia\Inertia::render('crearclientegrupos');
+});
+Route::get('crearcliente-vue', function(){
+    return \Inertia\Inertia::render('crearcliente');
+});
+Route::get('crearclientedireccion-vue', function(){
+    return \Inertia\Inertia::render('crearclientedireccion');
 });
 Route::get('ClienteDirecciones-vue', function(){
     return \Inertia\Inertia::render('ClienteDirecciones');

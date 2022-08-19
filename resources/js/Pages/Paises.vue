@@ -3,10 +3,9 @@
         <h1>Paises</h1>
         <div class="add-item-form">
 
-            <el-link href="crearpaises-vue" round style="float: right;" >Añadir Paises</el-link>
-            <router-link to="/prueba-vue" >
-                <button round style="float: right;" class="btn btn-primary">Añadir Paisess</button>
-            </router-link>
+
+            <button round style="float: right;" class="btn btn-primary"><el-link href="crearpaises-vue" round style="float: right;color: white;" >Añadir Paises</el-link></button>
+
 
         </div>
         <table class="table table-striped">
